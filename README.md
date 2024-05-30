@@ -21,10 +21,15 @@ A boilerplate for building scalable and maintainable REST APIs using Node.js, Ex
 
    ```bash
    git clone https://github.com/princemeghani/nodejs-express-sequelize-boilerplate.git
+   ```
+
+2. Enter into the directory
+
+   ```bash
    cd nodejs-express-sequelize-boilerplate
    ```
 
-2. Install dependencies:
+3. Install dependencies:
 
    ```bash
    npm install
@@ -32,7 +37,7 @@ A boilerplate for building scalable and maintainable REST APIs using Node.js, Ex
    yarn
    ```
 
-3. Configure environment variables:
+4. Configure environment variables:
    Rename `.env.sample` to `.env` file in the root directory and add the necessary environment variables.
 
    | Variable             | Description                          | Example           |
@@ -47,7 +52,7 @@ A boilerplate for building scalable and maintainable REST APIs using Node.js, Ex
    | `SERVER_JWT_SECRET`  | Secret key for JWT                   | `your_jwt_secret` |
    | `SERVER_JWT_TIMEOUT` | JWT time expiration                  | `1d`              |
 
-4. Create database:
+5. Create database:
 
    ```bash
    npx sequelize db:create
@@ -55,7 +60,7 @@ A boilerplate for building scalable and maintainable REST APIs using Node.js, Ex
    yarn sequelize db:create
    ```
 
-5. Run database migrations:
+6. Run database migrations:
 
    ```bash
    npx sequelize db:migrate
@@ -63,7 +68,7 @@ A boilerplate for building scalable and maintainable REST APIs using Node.js, Ex
    yarn sequelize db:migrate
    ```
 
-6. Start the application:
+7. Start the application:
    ```bash
    npm start
    # or
@@ -86,6 +91,35 @@ A boilerplate for building scalable and maintainable REST APIs using Node.js, Ex
 ├── .gitignore          # Git ignore rules
 ├── package.json        # NPM dependencies and scripts
 └── README.md           # Project documentation
+```
+
+## Commands for sequelize
+
+```bash
+# Creates the database
+npx sequelize db:create
+# or
+yarn sequelize db:create
+
+# Drops the database
+npx sequelize db:drop
+# or
+yarn sequelize db:drop
+
+# Load migrations
+npx sequelize db:migrate
+# or
+yarn sequelize db:migrate
+
+# Undo migrations
+npx sequelize db:migrate:undo:all
+# or
+yarn sequelize db:migrate:undo:all
+
+# Load seeders
+npx sequelize db:seed:all
+# or
+yarn sequelize db:seed:all
 ```
 
 ## Usage
