@@ -1,6 +1,7 @@
 # Node.js Express Sequelize Boilerplate
 
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
+
 A boilerplate for building scalable and maintainable REST APIs using Node.js, Express.js, Sequelize.js, Yup and JWT. This project provides a strong foundation with an organized directory structure and pre-configured tools to streamline your development process.
 
 ## Features
